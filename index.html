@@ -13,6 +13,7 @@
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 
 </head>
@@ -23,7 +24,7 @@
             <span class="web-logo">Web</span>Studio</a>
             <nav class="header-navigation">
                 <ul list class="header-list list">
-                    <li class="header-item"><a class="header-link-dark link" href="./index.html">Студия</a></li>
+                    <li class="header-item"><a class="header-link-dark active link current" href="./index.html">Студия</a></li>
                     <li class="header-item"><a class="header-link-dark link" href="./portfolio.html">Портфолио</a></li>
                     <li class="header-item"><a class="header-link-dark link" href="">Контакты</a></li>
                 </ul>
@@ -92,9 +93,27 @@
             <div class="container">
                 <h2 class="second-hero-title">Чем мы занимаемся</h2>
                     <ul class="img-first-pg list">
-                        <li class="first-pg-item"><img src="./images/box1.jpg" width="370" height="294" alt="человек гуглит"></li>
-                        <li class="first-pg-item"><img src="./images/box2.jpg" width="370" height="294" alt="человек гуглит через айпад"></li>
-                        <li class="first-pg-item"><img src="./images/box3.jpg" width="370" height="294" alt="человек печатает"></li>
+                        <li class="first-pg-item">
+                            <div class="example-thumb">
+                                <img class="example-img" src="./images/box1.jpg" alt="Програмист пишет код" width="370" height="294">
+                                <p class="example-text">Десктопные приложения</p>
+                            </div>
+                        </li>
+                    
+                        <li class="first-pg-item">
+                            <div class="example-thumb">
+                                <img class="example-img" src="./images/box2.jpg" alt="Дизайн меню для смартфона" width="370" height="294">
+                                <p class="example-text">Мобильные приложения</p>
+                            </div>
+                        </li>
+                    
+                        <li class="first-pg-item">
+                            <div class="example-thumb">
+                                <img class="example-img" src="./images/box3.jpg" alt="В руках планшет со стилусом" width="370"
+                                    height="294">
+                                <p class="example-text">Дизайнерские решения</p>
+                            </div>
+                        </li>
                     </ul>
             </div>
         </section>
@@ -102,7 +121,9 @@
             <div class="section-team-div container">
              <h2 class="team-hero-title">Наша Команда</h2>
                  <ul class="team-pic list">
-                    <li class="team-member"><img src="./images/Team member(1).jpg" width="270" height="260" alt="в очках"><div class="team-pad"><h3 class="description-team">Игорь Демьяненко</h3><br>
+                    <li class="team-member">
+                        <img src="./images/Team member(1).jpg" width="270" height="260" alt="в очках">
+                        <div class="team-pad"><h3 class="description-team">Игорь Демьяненко</h3><br>
                     <p class="description-p">Product Designer</p>
                 <ul class="social-networks-list list"> 
                    <!-- instagram -->

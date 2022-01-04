@@ -117,6 +117,9 @@ body {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+  position: relative;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .web-logo {
   font-family: Raleway;
@@ -149,6 +152,7 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
   align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-web {
@@ -215,6 +219,21 @@ body {
   margin: 0 auto;
   display: block;
   margin-top: 50px;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.active::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: #2196f3;
+  position: absolute;
+  display: block;
+  border-radius: 2px;
+  bottom: 0;
+  left: 0;
 }
 
 /*-------------------------------main---------------------------------*/
@@ -331,6 +350,7 @@ body {
 }
 .img-first-pg {
   display: flex;
+  margin-top: 50px;
 }
 .first-pg-item:not(:last-child) {
   margin-right: 30px;
@@ -384,16 +404,10 @@ body {
   align-items: center;
   justify-content: center;
   color: #afb1b8;
-}
-.social-networks-link {
-  width: 100%;
-  height: 100%;
-  background-color: #ffffff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #afb1b8;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-join-link:focus,
 .footer-join-link:hover {
@@ -412,13 +426,18 @@ body {
 
 .client-link {
   display: inline-flex;
-  width: 100%;
-  height: 100%;
+  width: 170px;
+  height: 92px;
   border: 1px solid color rgba(175, 177, 184, 1);
   border-radius: 4px;
+  fill: #afb1b8;
   justify-content: center;
   align-items: center;
+  outline: none;
   color: rgba(175, 177, 184, 1);
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-item {
   display: inline-flex;
@@ -439,6 +458,39 @@ body {
 .client-link:focus {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
+  fill: #2196f3;
+}
+/*----------------------WORK EXAMPLES---------------------*/
+.second-hero-title {
+  color: var(--basic-text-color);
+  font-family: var(--basic-text);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.example-thumb {
+  display: flex;
+  position: relative;
+}
+.example-text {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
 }
 /*-------------------------------CLIENT SECTION---------------------------------*/
 
@@ -526,11 +578,28 @@ body {
   width: 231px;
   height: 81px;
 }
+.footer-adress,
+.footer-web,
+.footer-tel {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.footer-adress:hover {
+  color: var(--accent-color);
+}
 .footer-web:hover {
   color: var(--accent-color);
 }
 .footer-tel:hover {
+  color: var(--accent-color);
+}
+.footer-adress:focus {
+  color: var(--accent-color);
+}
+.footer-web:focus {
+  color: var(--accent-color);
+}
+.footer-tel:focus {
   color: var(--accent-color);
 }
 .social-link {
@@ -542,6 +611,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link:hover,
 .social-link:focus {
@@ -646,6 +719,10 @@ body {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-btn:active {
   color: var(--accent-color);
