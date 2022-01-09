@@ -428,7 +428,7 @@ body {
   display: inline-flex;
   width: 170px;
   height: 92px;
-  border: 1px solid color rgba(175, 177, 184, 1);
+  border: 1px solid rgba(175, 177, 184, 1);
   border-radius: 4px;
   fill: #afb1b8;
   justify-content: center;
@@ -443,7 +443,6 @@ body {
   display: inline-flex;
   width: 170px;
   height: 92px;
-  border: 1px solid rgba(175, 177, 184, 1);
   border-radius: 4px;
   justify-content: center;
   align-items: center;
@@ -831,7 +830,6 @@ body {
   height: 30px;
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  fill: #2196f3;
   border-radius: 50%;
   position: absolute;
   top: 10px;
@@ -840,7 +838,10 @@ body {
   align-items: center;
   justify-content: center;
 }
-
+.modal-close:hover,
+.modal-close:focus {
+  fill: #2196f3;
+}
 .is-hidden {
   visibility: hidden;
   opacity: 0;
